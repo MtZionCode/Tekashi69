@@ -1,0 +1,327 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+ font-family: 'Roboto', sans-serif;
+ background-color: #19202a;
+}
+
+#top-section{
+	position: relative;
+	height: 100vh;
+}
+
+header{
+	position: absolute;
+	z-index: 3;
+	padding: 20px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.logo{
+	width: 50px;
+}
+
+.logo img{
+	width: 100%;
+}
+
+nav{
+	align-self: center;
+}
+
+nav a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem
+	font-weight: 300;
+	padding:0;
+	padding-right: 5px;
+}
+
+.blurred-background{
+	background-image: linear-gradient(45deg, rgba(25,32,42,1) 0%,rgba(25,32,42,1) 33%,rgba(25,32,42,0.96) 36%, rgba(25,32,42,0.47) 69%, rgba(176, 38,183,0.32) 79%, rgba(125,185,232,0) 100%), url("https://s15.postimg.cc/qjk9kwnt7/top.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	filter: blur(40px) saturate(130%);
+	position: absolute;
+	z-index: 1;
+}
+.floating-img{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: absolute;
+	z-index: 2;
+}
+.Tekashi-img{
+	width: 30%;	
+}
+
+.Tekashi-img.img{
+	width: 100%;
+	filter: contrast(150%);
+}
+
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+#bio {
+  /*display: flex;*/
+  /*padding: 50px;*/
+  background: black;
+  position: relative;
+  z-index: 3;
+  padding: 100px 0;
+}
+
+#bio .container {
+  display: flex;
+}
+
+#bio p {
+  color: white;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  padding: 50px;
+  display: flex;
+  padding: 0 50px; 
+}
+
+#bio .logo-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0 50px;
+}
+
+#media{
+	/*border: 1px solid blue;*/
+	background-image: url('https://s15.postimg.cc/dun7slqij/original.jpg');
+	background-size: cover;
+	padding: 100px 0;
+}
+
+#media .title{
+ background-color: black;
+ font-size: 1.1rem;
+ font-weight: 300;
+ text-transform: uppercase;
+ padding: 20px;
+ text-align: center;
+ width: 100%;
+ max-width: 500px;
+ margin: 0 auto;
+/* margin-bottom: 0 0  80px 0;*/
+ color: white;
+}
+
+.outerbtch{
+	margin: 0 auto;
+}
+
+#media .videos{
+	/*border: 1px solid blue;*/
+	padding:80px 50px;
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-gap: 25px;
+}
+
+.videos .video{
+	/*border: 1px solid blue;*/
+	border-radius: 4px;
+	overflow: hidden;
+	height: 300px;
+	-webkit-box-shadow: 0 5px 0 0 rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 5px 0 0 rgba(0,0,0,0.75);
+	box-shadow: 0 13px 24px -8px 0 rgba(0,0,0,0.75);
+}
+
+.videos iframe{
+	height: 100%;	
+}
+
+#music{
+	padding: 80px 0;
+	position: relative;
+}
+
+#music .container{
+	display: flex;
+	position: relative;
+	z-index: 3;
+}
+
+#music .blurred-background{
+	background-image: linear-gradient(45deg, rgba(255,253,60,1) 0%,rgba(255,253,60,1) 33%,rgba(255,253,60,.96) 36%, rgba(255,253,60,0.47) 69%, rgba(176, 38,183,0.32) 79%, rgba(125,185,232,0) 100%), url("https://s15.postimg.cc/nhs3oqgej/album.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	filter: blur(40px) saturate(130%);
+	position: absolute;
+	z-index: 1;
+}
+
+#music .info{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#music .info .title{
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 15px;
+		
+}
+
+#music .info .sub-title{
+	font-size: 1.7rem;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 100px;
+}
+
+
+#music .info .singles{
+	width: 400px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin-bottom: 80px;
+}
+
+ul {
+  list-style: none;
+}
+
+#music .info .singles li{
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#music .info .logos{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+#music .album-cover{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#music .album-cover img{
+	width: 50%;
+}
+
+#tour{
+	background-color: black;
+	position: relative;
+	z-index: 4;
+
+}
+
+#tour .top-image{
+	background-image: url("https://s15.postimg.cc/7i183vdcr/group.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	filter: saturate(0%) contrast(150%);
+	height: 300px;
+
+}
+
+#tour .tour-dates{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 80px 0;
+
+}
+
+#tour .tour-dates .title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	margin: 50px 0; 
+	color: white;
+	margin: 0 0 80px;
+	
+}
+
+#tour .tour-dates .dates{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);	
+	/*max-width: 800px;*/
+	grid-gap: 20px;
+}
+
+#tour li{
+	color: white;	
+	font-size:1.3rem;
+}
+
+#tour .tour-dates .dates li span{
+	padding: 0 10px;
+}
+
+li .date{
+	color: #f14848;
+}
+
+li .city{
+	font-weight: :700;
+
+}
+
+li .location{
+	font-weight: :300;
+	font-size: 1rem;
+}
+
+li .dates{
+	font-weight: :500;
+	color: #f14848;
+}
+
+footer{
+	background-color: #1b1b1b;
+	position: relative;
+	z-index: 4;
+	padding: 25px;
+	text-align: center;
+	color: white;
+}
+
+
+footer img{
+	max-width:45px;
+}
+
+footer a{
+	color: red;
+	text-decoration: none;
+}
+
+
